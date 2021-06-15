@@ -1,30 +1,53 @@
-const cadastrar = () => {
-  let nomeCurso = document.getElementById('nome').value
-  let campoNomeCurso = document.getElementById('nome_curso')
+class Produto {
 
-  let dataDeInicio = document.getElementById('dataInicio').value
-  let campoDataInicio = document.getElementById('data_inicio')
+  constructor() {
+    this.arrayProduto = []
+  }
 
+  lerDados() {
+    let produto = {}
 
-  let dataDeFim = document.getElementById('dataFim').value
-  let campoDataFim = document.getElementById('data_fim')
+    produto.nome = document.getElementById('nome').value
+    produto.dataInicio = document.getElementById('dataInicio').value
+    produto.dataFinal = document.getElementById('dataFim').value
+    produto.duracao = document.getElementById('duracao').value
+    produto.descricao = document.getElementById('descricao').value
 
+    return produto
+  }
 
-  let tempoDuracao = document.getElementById('duracao').value
-  let campoDuracao = document.getElementById('tempo_duracao')
+  listarTabela() {
+    let tbody = document.getElementById('tbody')
+    tbody.innerText =''
 
-  let textoDescricao = document.getElementById('descricao').value
-  let campoDescricao = document.getElementById('area-descricao')
+    for(let i = 0; i < this.arrayProduto.length; i++) {
+      let tr = tbody.insertRow()
 
+      let td_nome = tr.insertCell()
+      let td_dataInicio = tr.insertCell()
+      let td_dataFinal = tr.insertCell()
+      let td_duracao = tr.insertCell()
+      let td_descricao = tr.insertCell()
 
+      td_nome.innerText = this.arrayProduto[i].nome
+      td_dataInicio.innerText = this.arrayProduto[i].dataInicio
+      td_dataFinal.innerText = this.arrayProduto[i].dataFinal
+      td_duracao.innerText = this.arrayProduto[i].duracao
+      td_descricao.innerText = this.arrayProduto[i].descricao
+    }
+  }
 
-  campoNomeCurso.innerHTML = nomeCurso
+  adicionar(produto) {
+    this.arrayProduto.push(produto)
+  }
 
-  campoDataInicio.innerHTML = dataDeInicio
+  cadastrar(){
+    let produto = this.lerDados()
+    this.adicionar(produto)
 
-  campoDataFim.innerHTML = dataDeFim
+    this.listarTabela()
+  }
 
-  campoDuracao.innerHTML =`${tempoDuracao} semanas`
-
-  campoDescricao.innerHTML = textoDescricao
 }
+
+var produto = new Produto()

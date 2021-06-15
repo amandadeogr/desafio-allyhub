@@ -48,39 +48,30 @@
     <div class="buttons">
       <text onclick="consultar()">Consulte cursos cadastrados</text>
 
-      <button onclick="cadastrar()">Cadastrar Curso</button>
+      <button onclick="produto.cadastrar()">Cadastrar Curso</button>
     </div>
 
-    <div id="confirmacao"></div>
   </div>
   
   </section>
 
   <section>
-    <div id="consulta">
       <table>
-        <tr>
-          <td>Nome do curso</td>
-          <td>Data de início</td>
-          <td>Data de fim</td>
-          <td>Duração</td>
-          <td>Descrição</td>
-        </tr>
+        <thead id="thead">
+            <td>Nome do curso</td>
+            <td>Data de início</td>
+            <td>Data de fim</td>
+            <td>Duração</td>
+            <td>Descrição</td>
+        </thead>
 
-        <tr>
-          <td id="nome_curso"></td>
-          <td id="data_inicio"></td>
-          <td id="data_fim"></td>
-          <td id="tempo_duracao"></td>
-          <td id="area-descricao"></td>
-        </tr>
+        <tbody id="tbody">
+        </tbody>
 
       </table>
-    </div>
-
-    
   </section>
   
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
+  <script src="scriptnovo.js"></script>
 </body>
 </html>
