@@ -1,0 +1,108 @@
+:root {
+  --font: 'Poppins', sans-serif;
+}
+
+/* border: 1px solid red; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  color: #4e4e4e;
+  font-size: 16px;
+}
+
+section {
+  width: 40%;
+  max-width: 700px;
+  min-width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+header {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #b700ff;
+}
+
+button:hover {
+  background-color: #b700ff;
+  color: white;
+  transition: 0.5s;
+}
+
+text:hover {
+  color: blue;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+.section-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario {
+  border: 1px solid #7c7c7c;
+  border-radius: 10px;
+  padding: 60px;
+  text-align: right;
+}
+
+input, textarea {
+  width: 68%;
+  max-width: 68%;
+  min-width: 180px;
+}
+
+form div {
+  margin-bottom: 25px;
+}
+
+.formulario form div label {
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+div {
+  display: block;
+}
+
+table {
+  border: 1px solid red;
+}
+
+table tr, td {
+  padding: 20px;
+}
+
+@media (max-width: 1024px){
+  .formulario {
+    text-align: center; }
+
+    button {
+      margin-left: 0;
+    }
+}

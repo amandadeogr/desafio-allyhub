@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Estágio AllyHub</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <a href="" class="logo">Logo</a>
+      <button>Cadastre seu curso</button>
+  </header>
+  <section class="section-formulario">
+    <h3>Preencha o Formulário abaixo para realizar o cadastro do seu curso:</h3>
+
+    <div class="formulario">
+      <form>
+        <div>
+          <label for="nome">Nome do Curso</label> 
+          <input type="text" name="nome" id="nome">
+        </div>
+
+        <div>
+          <label for="">Data de início</label> 
+          <input type="date" name="dataInicio" id="dataInicio">
+        </div>
+
+        <div>
+          <label for="">Data de fim</label> 
+          <input type="date" name="dataFim" id="dataFim">
+        </div>
+
+        <div>
+          <label for="">Duraçao</label> 
+          <input type="number" name="duracao" id="duracao" placeholder="Digite a duracao em semanas">
+        </div>
+
+        <div>
+          <label for="" style="text-align: center;" >Descrição</label> 
+          <textarea name="descricao" id="descricao" cols="30" rows="10" style="max-width: 70%;"></textarea>
+        </div>
+      </form>  
+
+    <div class="buttons">
+      <text onclick="consultar()">Consulte cursos cadastrados</text>
+
+      <button onclick="cadastrar()">Cadastrar Curso</button>
+    </div>
+
+    <div id="confirmacao"></div>
+  </div>
+  
+  </section>
+
+  <section>
+    <div id="consulta">
+      <table>
+        <tr>
+          <td>Nome do curso</td>
+          <td>Data de início</td>
+          <td>Data de fim</td>
+          <td>Duração</td>
+          <td>Descrição</td>
+        </tr>
+
+        <tr>
+          <td id="nome_curso"></td>
+          <td id="data_inicio"></td>
+          <td id="data_fim"></td>
+          <td id="tempo_duracao"></td>
+          <td id="area-descricao"></td>
+        </tr>
+
+      </table>
+    </div>
+
+    
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
