@@ -12,11 +12,10 @@ Os dados capturados dos inputs, foram armazenados em variáveis, que foram armaz
 
 Conforme solicitado no desafio, foi inserido um campo de pesquisa (pesquisa realizada através do nome do curso), que retorna os dados inseridos no array, conforme o nome do curso selecionado.
 O resultado da interface do projeto se encontra na imagem abaixo. 
-Para verificar o funcionamento das funcionalidades, hospedei os códigos em um hospedeiro gratuito externo.
+Para verificar o funcionamento das funcionalidades, hospedei os códigos no Vercel.
 
-[Link para verificar o site](https://desafio-allyhub.vercel.app/)
+[Link para o Vercel](https://desafio-allyhub.vercel.app/)
 
 ![image](https://user-images.githubusercontent.com/78186370/122293315-47041700-cecd-11eb-9afb-671db19738e5.png)
-![image](https://user-images.githubusercontent.com/78186370/122298573-54bc9b00-ced3-11eb-9859-146fbf25fed9.png)
 
 
