@@ -11,43 +11,41 @@
 </head>
 <body>
   <header>
-      <a href="" class="logo">Logo</a>
+      <a href="" class="logo">AllyHub <span> Desafio</span> </a>
       <button>Cadastre seu curso</button>
   </header>
   <section class="section-formulario">
-    <h3>Preencha o Formulário abaixo para realizar o cadastro do seu curso:</h3>
+    <p>Preencha o Formulário abaixo para realizar o cadastro do seu curso:</p>
 
     <div class="formulario">
       <form>
         <div>
-          <label for="nome">Nome do Curso</label> 
+          <label>Nome do Curso</label> 
           <input type="text" name="nome" id="nome">
         </div>
 
         <div>
-          <label for="">Data de início</label> 
+          <label>Data de início</label> 
           <input type="date" name="dataInicio" id="dataInicio">
         </div>
 
         <div>
-          <label for="">Data de fim</label> 
+          <label>Data de fim</label> 
           <input type="date" name="dataFim" id="dataFim">
         </div>
 
         <div>
-          <label for="">Duraçao</label> 
+          <label>Duraçao</label> 
           <input type="number" name="duracao" id="duracao" placeholder="Digite a duracao em semanas">
         </div>
 
         <div>
-          <label for="" style="text-align: center;" >Descrição</label> 
-          <textarea name="descricao" id="descricao" cols="30" rows="10" style="max-width: 70%;"></textarea>
+          <label style="text-align: center;" >Descrição</label> 
+          <textarea id="descricao" cols="30" rows="10" style="max-width: 70%;"></textarea>
         </div>
       </form>  
 
-    <div class="buttons">
-      <button onclick="produto.cadastrar()">Cadastrar Curso</button>
-    </div>
+      <button onclick="produto.cadastrar()" class="btn-cta">Cadastrar Curso</button>
   </div>
   </section>
 

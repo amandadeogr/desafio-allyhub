@@ -9,18 +9,30 @@
   font-family: var(--font);
 }
 
-body, h3  {
+body, p  {
   font-size: 16px;
-  color: #4e4e4e;
+}
+
+p, .logo, body{
+  color: #545d99;
+}
+
+.formulario, table, #myInput, input, textarea {
+  border: 1px solid #d5d7fd;
+  background-color: #ffffff;
 }
 
 body {
-  background-color: #f3ffff;
+  background-color: #ececff;
+  background-image: url(images/blue-line-background.png);
 }
 
-.formulario, table, #myInput {
-  border: 1px solid #d5d7fd;
-  background-color: #ffffff;
+p {
+  padding: 5px 20px;
+}
+
+.formulario, table {
+  box-shadow: 1px 1px 15px #ccc;
 }
 
 section {
@@ -44,7 +56,14 @@ header {
 
 .logo {
   text-decoration: none;
+  font-size: .8em;
+  width: 50px;
+  line-height: 15px;
+}
+
+.logo span {
   font-size: 1.3em;
+  font-weight: 600;
 }
 
 button {
@@ -53,13 +72,18 @@ button {
   margin-left: 20px;
   border-radius: 10px;
   background: transparent;
-  border: 1px solid #b700ff;
+  border: 1px solid #4f5794;
 }
 
-button:hover {
-  background-color: #b700ff;
+button:hover, button.btn-cta:hover {
+  background-color: #485199;
   color: white;
   transition: 0.5s;
+}
+
+button.btn-cta {
+  background-color: #5862b4;
+  color: white;
 }
 
 .section-formulario {
@@ -78,6 +102,7 @@ input, textarea {
   width: 68%;
   max-width: 68%;
   min-width: 180px;
+  color: hsl(0, 0%, 21%, 0.7);
 }
 
 form div {
@@ -94,7 +119,7 @@ div {
 }
 
 #myInput {
-  margin-bottom: 20px;
+  margin: 20px 20px ;
   border-radius: 100px;
   padding: 5px 15px;
 }
@@ -104,8 +129,9 @@ table {
   width: 100%;
 }
 
-thead {;
-  background-color: #838bf6;
+thead {
+  background: #5c64a3;
+  background: linear-gradient(90deg, #5c64a3 21%, #5f6bce 49%, #5c64a3 82%);
   border: 1px solid #838bf6;
   color: white;
   text-align: center;
@@ -124,8 +150,12 @@ table tr, table td {
     }
 
     .table-section {
-      margin-bottom: 60px;
+      margin-bottom: 160px;
       max-width: 300px;
       font-size: 12px;
+    }
+
+    button {
+      font-size: .7em;
     }
 }
