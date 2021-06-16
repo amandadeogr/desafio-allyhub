@@ -20,7 +20,7 @@ class Produto {
   filter() {
     const input = document.getElementById("myInput");
     const text = input.value;
-    return this.arrayProduto.filter( pinto => pinto.nome.includes(text));
+    return this.arrayProduto.filter(filtarArray => filtarArray.nome.includes(text));
   }
 
   listarTabela() {
