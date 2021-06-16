@@ -14,6 +14,7 @@ class Produto {
     produto.descricao = document.getElementById('descricao').value
     
     return produto
+
   }
 
   filter() {
@@ -41,6 +42,12 @@ class Produto {
       td_dataFinal.innerText = curso.dataFinal
       td_duracao.innerText = curso.duracao
       td_descricao.innerText = curso.descricao
+
+      document.getElementById('nome').value = ''
+      document.getElementById('dataInicio').value = ''
+      document.getElementById('dataFim').value = ''
+      document.getElementById('duracao').value = ''
+      document.getElementById('descricao').value = ''
     }
     
   }
