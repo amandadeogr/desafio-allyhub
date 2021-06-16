@@ -12,15 +12,22 @@ class Produto {
     produto.dataFinal = document.getElementById('dataFim').value
     produto.duracao = document.getElementById('duracao').value
     produto.descricao = document.getElementById('descricao').value
-
+    
     return produto
+  }
+
+  filter() {
+    const input = document.getElementById("myInput");
+    const text = input.value;
+    return this.arrayProduto.filter( pinto => pinto.nome.includes(text));
   }
 
   listarTabela() {
     let tbody = document.getElementById('tbody')
     tbody.innerText =''
 
-    for(let i = 0; i < this.arrayProduto.length; i++) {
+    const cursos = this.filter();
+    for(const curso of cursos) {
       let tr = tbody.insertRow()
 
       let td_nome = tr.insertCell()
@@ -29,12 +36,13 @@ class Produto {
       let td_duracao = tr.insertCell()
       let td_descricao = tr.insertCell()
 
-      td_nome.innerText = this.arrayProduto[i].nome
-      td_dataInicio.innerText = this.arrayProduto[i].dataInicio
-      td_dataFinal.innerText = this.arrayProduto[i].dataFinal
-      td_duracao.innerText = this.arrayProduto[i].duracao
-      td_descricao.innerText = this.arrayProduto[i].descricao
+      td_nome.innerText = curso.nome
+      td_dataInicio.innerText = curso.dataInicio
+      td_dataFinal.innerText = curso.dataFinal
+      td_duracao.innerText = curso.duracao
+      td_descricao.innerText = curso.descricao
     }
+    
   }
 
   adicionar(produto) {
@@ -50,4 +58,4 @@ class Produto {
 
 }
 
-var produto = new Produto()
+const produto = new Produto()

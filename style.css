@@ -7,8 +7,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
-  color: #4e4e4e;
+}
+
+body, h3  {
   font-size: 16px;
+  color: #4e4e4e;
+}
+
+body {
+  background-color: #f3ffff;
+}
+
+.formulario, table, #myInput {
+  border: 1px solid #d5d7fd;
+  background-color: #ffffff;
 }
 
 section {
@@ -53,10 +65,10 @@ button:hover {
 .section-formulario {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .formulario {
-  border: 1px solid #7c7c7c;
   border-radius: 10px;
   padding: 60px;
   text-align: right;
@@ -81,21 +93,26 @@ div {
   display: block;
 }
 
+#myInput {
+  margin-bottom: 20px;
+  border-radius: 100px;
+  padding: 5px 15px;
+}
+
 table {
-  border: 1px solid rgb(121, 121, 121);
   border-collapse: collapse;
   width: 100%;
 }
 
-thead {
-  border: 1px solid rgb(121, 121, 121);
-  background-color: #ebe9e9;
+thead {;
+  background-color: #838bf6;
+  border: 1px solid #838bf6;
+  color: white;
   text-align: center;
 }
 
 table tr, table td {
   padding: 10px;
-  width: 100px;
 }
 
 @media (max-width: 1024px){
@@ -104,5 +121,11 @@ table tr, table td {
 
     button {
       margin-left: 0;
+    }
+
+    .table-section {
+      margin-bottom: 60px;
+      max-width: 300px;
+      font-size: 12px;
     }
 }
