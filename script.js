@@ -56,11 +56,16 @@ class Produto {
     this.arrayProduto.push(produto)
   }
 
-  cadastrar(){
-    let produto = this.lerDados()
-    this.adicionar(produto)
+   cadastrar(){
+    let curso = this.lerDados()
 
-    this.listarTabela()
+    if(curso.nome == '' && curso.dataInicio == '' && curso.dataFinal == '' && curso.duracao == '' ) {
+      alert('Os campos abaixo precisam ser preenchidos.')
+    } else {
+        this.adicionar(curso)
+        this.listarTabela()
+    }
+    
   }
 
 }
