@@ -36,7 +36,7 @@ p {
 }
 
 section {
-  width: 60%;
+  width: 40%;
   max-width: 100%;
   min-width: 350px;
   margin: auto;
@@ -125,6 +125,7 @@ div {
 }
 
 table {
+  table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
 }
@@ -143,19 +144,20 @@ table tr, table td {
 
 @media (max-width: 1024px){
   .formulario {
-    text-align: center; }
+    text-align: center; 
+  }
+
+  table {
+    margin: auto;
+    text-align: top center; 
+    max-width: 100%;
+    overflow-wrap: break-word;
+    font-size: .7em;
+  }
 
     button {
       margin-left: 0;
-    }
-
-    .table-section {
-      margin-bottom: 160px;
-      max-width: 300px;
-      font-size: 12px;
-    }
-
-    button {
       font-size: .7em;
     }
+
 }
