@@ -40,7 +40,7 @@ class Produto {
       td_nome.innerText = curso.nome
       td_dataInicio.innerText = curso.dataInicio
       td_dataFinal.innerText = curso.dataFinal
-      td_duracao.innerText = curso.duracao
+      td_duracao.innerText = curso.duracao + ' Semanas'
       td_descricao.innerText = curso.descricao
 
       document.getElementById('nome').value = ''
